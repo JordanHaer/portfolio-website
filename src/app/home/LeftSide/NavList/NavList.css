@@ -1,0 +1,7 @@
+.active .nav-indicator {
+  @apply bg-slate-200 w-16;
+}
+
+.active .nav-text {
+  @apply text-slate-200;
+}

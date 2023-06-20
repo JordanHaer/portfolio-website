@@ -1,0 +1,7 @@
+.content *:not(p:first-of-type) {
+  @apply hidden;
+}
+
+.content p:first-of-type {
+  @apply line-clamp-3;
+}
