@@ -4,7 +4,7 @@ export interface GitHubRepository {
   topics: string[];
   homepage: string;
   html_url: string;
-  updated_at: string;
+  pushed_at: string;
 }
 
 export const getGitHubData = async () => {
@@ -14,5 +14,5 @@ export const getGitHubData = async () => {
   const projects: GitHubRepository[] = await result.json();
   return projects
     .filter((project) => project.name !== process.env.GITHUBUSERNAME)
-    .sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
+    .sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime());
 };
