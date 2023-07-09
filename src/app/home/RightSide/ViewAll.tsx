@@ -8,10 +8,10 @@ interface ViewAllProps {
 
 export default function ViewAll({ href, label }: ViewAllProps) {
   return (
-    <div className="mt-8">
+    <div>
       <Link
         href={href}
-        className="inline-flex items-center  leading-tight font-semibold text-slate-200 group"
+        className="group inline-flex items-center font-semibold leading-tight text-slate-200"
         aria-label="View Full Project Archive"
       >
         <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
