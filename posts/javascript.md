@@ -3,7 +3,7 @@ id: 3
 title: JavaScript Logic
 date: 2023-04-03
 readTime: 5
-tags: [CSS, HTML]
+tags: [JavaScript]
 image: "/javascript.jpg"
 ---
 
