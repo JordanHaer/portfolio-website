@@ -1,6 +1,6 @@
 import Image from "next/image";
 import RightArrowIcon from "@/app/icons/RightArrowIcon";
-import Skills from "./Skill";
+import Skill from "../Skill";
 
 interface ProjectCardProps {
   image: string;
@@ -38,7 +38,7 @@ export default function ProjectCard({ image, demoLink, title, description, skill
           <p className="mt-2 text-sm leading-normal">{description}</p>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
             {skills.sort().map((skill) => (
-              <Skills skill={skill} key={skill} />
+              <Skill skill={skill} key={skill} />
             ))}
           </ul>
         </div>

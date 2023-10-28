@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import ViewAll from "../ViewAll";
+import View from "../View";
 import { GitHubRepository, getGitHubData } from "../../../../lib/getGitHubData";
 
 export default async function Projects() {
@@ -22,7 +22,7 @@ export default async function Projects() {
             />
           ))}
         </ul>
-        <ViewAll href={"/projects"} label={"Projects & Source Code"} />
+        <View href={"/projects"} label={"View all Projects & Source Code"} />
       </div>
     </section>
   );

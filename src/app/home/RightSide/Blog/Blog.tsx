@@ -1,5 +1,5 @@
 import BlogCard from "./BlogCard";
-import ViewAll from "../ViewAll";
+import View from "../View";
 import { allPosts } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 
@@ -16,7 +16,7 @@ export default function Blog() {
             <BlogCard key={post.id} post={post} />
           ))}
         </ul>
-        <ViewAll href={"/blog"} label={"Blog Posts"} />
+        <View href={"/blog"} label={"View all Blog Posts"} />
       </div>
     </section>
   );
