@@ -44,6 +44,9 @@ export default function JobCard({
               </span>
             </a>
           </h3>
+          <p className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 sm:hidden">
+            {startDate} — {endDate}
+          </p>
           <p className="mt-2 text-sm leading-normal">{description}</p>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
             {skills.sort().map((skill) => (
@@ -51,9 +54,9 @@ export default function JobCard({
             ))}
           </ul>
         </div>
-        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+        <p className="hidden z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 sm:block">
           {startDate} — {endDate}
-        </header>
+        </p>
       </div>
     </li>
   );

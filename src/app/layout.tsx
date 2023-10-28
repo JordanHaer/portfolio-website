@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </Head>
       <body
-        className={`${inter.className} bg-slate-900 bg-gradient-to-b from-slate-800 to-slate-900 bg-cover bg-fixed bg-center bg-no-repeat leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900`}
+        className={`${inter.className} bg-slate-900 bg-cover bg-fixed bg-center bg-no-repeat leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900`}
       >
         {children}
       </body>
