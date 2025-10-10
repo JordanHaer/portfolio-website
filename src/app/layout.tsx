@@ -1,4 +1,5 @@
 import "./styles/globals.css";
+import 'prism-themes/themes/prism-vsc-dark-plus.css'
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
