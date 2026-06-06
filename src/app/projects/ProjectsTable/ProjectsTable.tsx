@@ -10,7 +10,7 @@ export default async function ProjectTable() {
           <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
           <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 sm:table-cell">Description</th>
           <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">Built with</th>
-          <th className="py-4 text-sm font-semibold text-slate-200">Demo/Source Code Links</th>
+          <th className="py-4 text-sm font-semibold text-slate-200">Links</th>
         </tr>
       </thead>
       <tbody>

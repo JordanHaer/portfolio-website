@@ -5,7 +5,7 @@ interface ProjectTabelRowProps {
   title: string;
   description: string;
   skills: string[];
-  demoLink: string;
+  demoLink?: string;
   sourceCodeLink: string;
 }
 
@@ -31,8 +31,8 @@ export default function ProjectTableRow({
       </td>
       <td className=" py-4 align-top ">
         <div className="-translate-y-px">
-          <ProjectTableLink externalLink={demoLink} />
           <ProjectTableLink externalLink={sourceCodeLink} />
+          {demoLink && <ProjectTableLink externalLink={demoLink} />}
         </div>
       </td>
     </tr>
