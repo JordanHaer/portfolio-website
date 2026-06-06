@@ -1,5 +1,5 @@
 import JobCard from "./JobCard";
-import jobs from "../../../data/jobs.json";
+import { jobs } from "@/app/content/job";
 import View from "../View";
 
 export default function Experience() {
