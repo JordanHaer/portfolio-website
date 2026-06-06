@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import "./NavList.css";
 
 export default function NavList() {
-  const listItems = ["experience", "projects", "blog"];
+  const listItems = ["experience", "projects"];
   return (
     <nav className="nav hidden lg:block" aria-label="In-page jump links">
       <ul className="mt-12 w-max">
