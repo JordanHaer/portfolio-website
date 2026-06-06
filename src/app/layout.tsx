@@ -2,10 +2,11 @@ import "./styles/globals.css";
 import 'prism-themes/themes/prism-vsc-dark-plus.css'
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Jordan Haer",
   description: "Portfolio website",
 };
