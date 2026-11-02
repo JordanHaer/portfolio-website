@@ -5,7 +5,7 @@ import ProjectTable from "./ProjectsTable/ProjectsTable";
 export default function ProjectsPage() {
   return (
     <div className="group/spotlight relative">
-      <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20  lg:py-24">
+      <div className="mx-auto min-h-screen max-w-(--breakpoint-xl) px-6 py-12 md:px-12 md:py-20  lg:py-24">
         <Link
           href="/"
           className="group inline-flex items-center font-semibold leading-tight text-teal-300"
