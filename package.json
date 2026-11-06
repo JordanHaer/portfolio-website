@@ -1,36 +1,43 @@
 {
   "name": "portfolio-website",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "next lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "sort": "sort-package-json",
     "start": "next start",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "4.3.3",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-scroll": "1.9.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.4",
     "@tailwindcss/typography": "0.5.20",
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "eslint": "10.14.0",
-    "eslint-config-next": "16.4.3",
-    "next": "16.4.3",
-    "postcss": "8.5.32",
-    "react": "19.3.1",
-    "react-dom": "19.3.1",
-    "react-scroll": "1.9.3",
-    "tailwindcss": "4.3.3",
-    "typescript": "7.0.2"
-  },
-  "devDependencies": {
     "@types/react-scroll": "1.8.10",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.5",
+    "eslint-config-prettier": "10.1.8",
+    "postcss": "8.5.32",
     "prettier": "3.9.10",
-    "prettier-plugin-tailwindcss": "0.8.1"
+    "prettier-plugin-tailwindcss": "0.8.1",
+    "sort-package-json": "4.1.0",
+    "tailwindcss": "4.3.4",
+    "typescript": "6.0.3"
   },
   "engines": {
-    "node": "26.x"
+    "node": "26.x",
+    "npm": "11.x"
   }
 }
