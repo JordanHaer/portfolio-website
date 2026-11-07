@@ -13,5 +13,5 @@ export default function LeftArrowIcon() {
         clipRule="evenodd"
       ></path>
     </svg>
-  );
+  )
 }

@@ -1,15 +1,19 @@
-import ProjectTableRow from "./ProjectsTableRow";
-import { GitHubRepository, getGitHubData } from "../../../lib/getGitHubData";
+import ProjectTableRow from './ProjectsTableRow'
+import { GitHubRepository, getGitHubData } from '../../../lib/getGitHubData'
 
 export default async function ProjectTable() {
-  const projectsSortedByDate: GitHubRepository[] = await getGitHubData();
+  const projectsSortedByDate: GitHubRepository[] = await getGitHubData()
   return (
-    <table id="content" className="mt-12 w-full border-collapse overflow-x-auto text-left ">
-      <thead className=" border-b border-slate-300/10 px-6 py-5  ">
+    <table id="content" className="mt-12 w-full border-collapse overflow-x-auto text-left">
+      <thead className="border-b border-slate-300/10 px-6 py-5">
         <tr>
           <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
-          <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 sm:table-cell">Description</th>
-          <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">Built with</th>
+          <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 sm:table-cell">
+            Description
+          </th>
+          <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">
+            Built with
+          </th>
           <th className="py-4 text-sm font-semibold text-slate-200">Links</th>
         </tr>
       </thead>
@@ -26,5 +30,5 @@ export default async function ProjectTable() {
         ))}
       </tbody>
     </table>
-  );
+  )
 }

@@ -5,7 +5,8 @@ export interface BioContent {
 }
 
 export const bioContent: BioContent = {
-  name: "Jordan Haer",
-  role: "Software Engineer",
-  description: "Passionate about building applications that combine intuitive interfaces with powerful functionality.",
+  name: 'Jordan Haer',
+  role: 'Software Engineer',
+  description:
+    'Passionate about building applications that combine intuitive interfaces with powerful functionality.',
 }

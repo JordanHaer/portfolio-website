@@ -1,12 +1,12 @@
-import ProjectTableSkill from "./ProjectsTableSkill";
-import ProjectTableLink from "./ProjectsTableLink";
+import ProjectTableSkill from './ProjectsTableSkill'
+import ProjectTableLink from './ProjectsTableLink'
 
 interface ProjectTabelRowProps {
-  title: string;
-  description: string;
-  skills: string[];
-  demoLink?: string;
-  sourceCodeLink: string;
+  title: string
+  description: string
+  skills: string[]
+  demoLink?: string
+  sourceCodeLink: string
 }
 
 export default function ProjectTableRow({
@@ -18,7 +18,7 @@ export default function ProjectTableRow({
 }: ProjectTabelRowProps) {
   return (
     <tr className="border-b border-slate-300/10 last:border-none">
-      <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">{title}</td>
+      <td className="py-4 pr-4 align-top leading-snug font-semibold text-slate-200">{title}</td>
       <td className="hidden py-4 pr-4 align-top text-sm sm:table-cell">
         <div className="translate-y-px">{description}</div>
       </td>
@@ -29,12 +29,12 @@ export default function ProjectTableRow({
           ))}
         </ul>
       </td>
-      <td className=" py-4 align-top ">
+      <td className="py-4 align-top">
         <div className="-translate-y-px">
           <ProjectTableLink externalLink={sourceCodeLink} />
           {demoLink && <ProjectTableLink externalLink={demoLink} />}
         </div>
       </td>
     </tr>
-  );
+  )
 }

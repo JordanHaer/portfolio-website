@@ -1,13 +1,13 @@
-import ProjectCard from "./ProjectCard";
-import View from "../View";
-import { GitHubRepository, getGitHubData } from "../../../../lib/getGitHubData";
+import ProjectCard from './ProjectCard'
+import View from '../View'
+import { GitHubRepository, getGitHubData } from '../../../../lib/getGitHubData'
 
 export default async function Projects() {
-  const projectsSortedByDate: GitHubRepository[] = await getGitHubData();
+  const projectsSortedByDate: GitHubRepository[] = await getGitHubData()
   return (
     <section id="projects" aria-label="Projects">
       <div className="pt-20 lg:pt-24">
-        <h2 className="pb-12 text-4xl font-bold leading-tight tracking-tight text-slate-200  lg:pt-2 lg:text-5xl">
+        <h2 className="pb-12 text-4xl leading-tight font-bold tracking-tight text-slate-200 lg:pt-2 lg:text-5xl">
           Projects
         </h2>
         <ul className="group/list">
@@ -22,8 +22,8 @@ export default async function Projects() {
             />
           ))}
         </ul>
-        <View href={"/projects"} label={"View all Projects & Source Code"} />
+        <View href={'/projects'} label={'View all Projects & Source Code'} />
       </div>
     </section>
-  );
+  )
 }
