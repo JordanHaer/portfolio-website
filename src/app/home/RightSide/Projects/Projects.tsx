@@ -1,6 +1,7 @@
 import ProjectCard from './ProjectCard'
 import View from '../View'
-import { GitHubRepository, getGitHubData } from '../../../../lib/getGitHubData'
+import type { GitHubRepository } from '@/lib/github-data/types/GitHubRepository'
+import { getGitHubData } from '@/lib/github-data/getGitHubData'
 
 export default async function Projects() {
   const projectsSortedByDate: GitHubRepository[] = await getGitHubData()

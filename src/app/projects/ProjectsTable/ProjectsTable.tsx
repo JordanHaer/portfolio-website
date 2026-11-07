@@ -1,5 +1,6 @@
 import ProjectTableRow from './ProjectsTableRow'
-import { GitHubRepository, getGitHubData } from '../../../lib/getGitHubData'
+import type { GitHubRepository } from '@/lib/github-data/types/GitHubRepository'
+import { getGitHubData } from '@/lib/github-data/getGitHubData'
 
 export default async function ProjectTable() {
   const projectsSortedByDate: GitHubRepository[] = await getGitHubData()

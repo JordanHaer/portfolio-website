@@ -11,6 +11,7 @@
     "lint:fix": "eslint . --fix",
     "sort": "sort-package-json",
     "start": "next start",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -34,7 +35,9 @@
     "prettier-plugin-tailwindcss": "0.8.1",
     "sort-package-json": "4.1.0",
     "tailwindcss": "4.3.5",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "5.1.0"
   },
   "engines": {
     "node": "26.x",
