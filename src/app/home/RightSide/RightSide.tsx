@@ -1,6 +1,6 @@
-import Experience from "./Experience/Experience";
-import Footer from "./Footer/Footer";
-import Projects from "./Projects/Projects";
+import Experience from './Experience/Experience'
+import Footer from './Footer/Footer'
+import Projects from './Projects/Projects'
 
 export default function RightSide() {
   return (
@@ -9,5 +9,5 @@ export default function RightSide() {
       <Projects />
       <Footer />
     </main>
-  );
+  )
 }

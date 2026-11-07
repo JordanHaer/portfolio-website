@@ -1,9 +1,9 @@
-import RightArrowIcon from "@/app/icons/RightArrowIcon";
-import Link from "next/link";
+import RightArrowIcon from '@/app/icons/RightArrowIcon'
+import Link from 'next/link'
 
 interface ViewProps {
-  href: string;
-  label: string;
+  href: string
+  label: string
 }
 
 export default function View({ href, label }: ViewProps) {
@@ -11,7 +11,7 @@ export default function View({ href, label }: ViewProps) {
     <div>
       <Link
         href={href}
-        className="group inline-flex items-center font-semibold leading-tight text-slate-200"
+        className="group inline-flex items-center leading-tight font-semibold text-slate-200"
       >
         <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
           {label}
@@ -19,5 +19,5 @@ export default function View({ href, label }: ViewProps) {
         <RightArrowIcon />
       </Link>
     </div>
-  );
+  )
 }

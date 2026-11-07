@@ -1,22 +1,36 @@
-import "./styles/globals.css";
-import { Inter } from "next/font/google";
-import Head from "next/head";
-import { Metadata } from "next";
+import './styles/globals.css'
+import { Inter } from 'next/font/google'
+import Head from 'next/head'
+import { Metadata } from 'next'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Jordan Haer",
-  description: "Portfolio website",
-};
+  title: 'Jordan Haer',
+  description: 'Portfolio website',
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
       <Head>
-        <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="%PUBLIC_URL%/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="%PUBLIC_URL%/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="%PUBLIC_URL%/favicon/favicon-16x16.png"
+        />
         <link rel="manifest" href="%PUBLIC_URL%/favicon/site.webmanifest" />
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </Head>
@@ -26,5 +40,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
       </body>
     </html>
-  );
+  )
 }

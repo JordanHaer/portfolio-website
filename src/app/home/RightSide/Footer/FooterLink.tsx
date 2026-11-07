@@ -1,6 +1,6 @@
 interface FooterLinkProps {
-  href: string;
-  label: string;
+  href: string
+  label: string
 }
 
 export default function FooterLink({ href, label }: FooterLinkProps) {
@@ -13,5 +13,5 @@ export default function FooterLink({ href, label }: FooterLinkProps) {
     >
       {label}
     </a>
-  );
+  )
 }
