@@ -20,7 +20,7 @@
     "react-scroll": "1.9.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.3.4",
+    "@tailwindcss/postcss": "4.3.5",
     "@tailwindcss/typography": "0.5.20",
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
@@ -33,7 +33,7 @@
     "prettier": "3.9.10",
     "prettier-plugin-tailwindcss": "0.8.1",
     "sort-package-json": "4.1.0",
-    "tailwindcss": "4.3.4",
+    "tailwindcss": "4.3.5",
     "typescript": "6.0.3"
   },
   "engines": {
